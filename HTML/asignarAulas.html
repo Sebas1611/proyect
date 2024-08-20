@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignar Aulas - Administrador</title>
+    <link rel="stylesheet" href="../css/asignarAulas.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <div class="navbar">
+        <a href="index.html">Dashboard</a>
+        <a href="asignar_aulas.html">Asignar Aulas</a>
+        <a href="aulas_disponibles.html">Aulas Disponibles</a>
+        <a href="gestion_usuarios.html">Gestión de Usuarios</a>
+        <a href="configuracion.html">Configuración</a>
+    </div>
+
+    <!-- Contenido Principal: Asignar Aulas -->
+    <div class="container">
+        <h1>Asignar Aulas</h1>
+
+        <!-- Selección de Curso -->
+        <div class="form-group">
+            <label for="curso">Seleccionar Curso:</label>
+            <input type="text" id="curso" placeholder="Ingrese el nombre del curso...">
+            <button class="btn" onclick="buscarCursos()">Buscar Cursos</button>
+        </div>
+
+        <div class="form-group">
+            <label for="departamento">Filtrar por Departamento:</label>
+            <select id="departamento" onchange="buscarCursos()">
+                <option value="">Seleccione un departamento</option>
+                <option value="ciencias">Ciencias</option>
+                <option value="matematicas">Matemáticas</option>
+                <option value="humanidades">Humanidades</option>
+            </select>
+        </div>
+
+        <!-- Selección de Aula -->
+        <div class="form-group">
+            <label for="aula">Seleccionar Aula:</label>
+            <input type="text" id="aula" placeholder="Ingrese el nombre o número de aula...">
+            <button class="btn" onclick="buscarAulas()">Buscar Aulas</button>
+        </div>
+
+        <div class="form-group">
+            <label for="capacidad">Filtrar por Capacidad:</label>
+            <select id="capacidad" onchange="buscarAulas()">
+                <option value="">Seleccione la capacidad</option>
+                <option value="20">Hasta 20 estudiantes</option>
+                <option value="50">Hasta 50 estudiantes</option>
+                <option value="100">Hasta 100 estudiantes</option>
+            </select>
+        </div>
+
+        <!-- Detalles de la Asignación -->
+        <div class="assignment-details">
+            <h2>Detalles de la Asignación</h2>
+            <form id="asignar-form">
+                <div class="form-group">
+                    <label for="curso-select">Curso:</label>
+                    <select id="curso-select">
+                        <option value="">Seleccione un curso</option>
+                        <!-- Opciones de curso se llenarán dinámicamente con JS -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="aula-select">Aula:</label>
+                    <select id="aula-select">
+                        <option value="">Seleccione un aula</option>
+                        <!-- Opciones de aula se llenarán dinámicamente con JS -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha y Hora:</label>
+                    <input type="datetime-local" id="fecha" required>
+                </div>
+
+                <button class="btn" type="submit">Asignar Aula</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

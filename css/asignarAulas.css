@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Color de fondo claro */
+}
+
+.navbar {
+    background-color: #005b96; /* Color azul oscuro */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #003d6a; /* Color azul más oscuro para el hover */
+}
+
+.container {
+    margin: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white; /* Fondo blanco para el contenedor principal */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #005b96; /* Color azul oscuro */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+h2 {
+    color: #005b96; /* Color azul oscuro */
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #005b96; /* Color azul oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #003d6a; /* Color azul más oscuro para el hover */
+}
+
+.assignment-details {
+    margin-top: 30px;
+}
+
+.assignment-details form {
+    background-color: #f9f9f9; /* Fondo gris claro para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.assignment-details input[type="datetime-local"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
